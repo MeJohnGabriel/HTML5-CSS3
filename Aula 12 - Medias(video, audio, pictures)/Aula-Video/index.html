@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos</title>
+</head>
+<body>
+    <h1>Vídeos Hospedados Localmente:</h1>
+    <p>Esse vídeo está hospedado no meu servidor</p>
+
+    <p> <!--MÉTODO 1-->
+        <video src="playing.m4v" width="380px" loop poster="imgs/playing.png" controls>
+        </video>
+    </p>
+    <!--MÉTODO 2; P/ USAR TENTATIVA COM TODOS OS VIDEOS/TYPES-->
+    <p>
+        <video width="380px" controls loop poster="imgs/coding.png"> 
+            <source src="coding-g.mp4"   type = "video/mp4"   > 
+            <source src="coding-g.ogv"   type = "video/ogv"   > 
+            <source src= "coding-p.webm" type = "video/webm"  > 
+        </video>
+    </p>   
+    <h1>Inserindo vídeo externo:</h1>
+    <p>Aqui está um vídeo do youtube:</p>
+    <iframe width="380px" height="315" src="https://www.youtube.com/embed/LW0bhKitRBk?si=b7tW7kL3u3dBOtuR" title="YouTube video player" frameborder="0"
+     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; 
+     picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+    </iframe>
+    <h1>Inserindo vídeo do Vimeo:</h1>
+    <iframe src="https://player.vimeo.com/video/159044523?h=ee14155639&color=ff9933&portrait=0" width="380" height="214" 
+    frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen>
+    </iframe>
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

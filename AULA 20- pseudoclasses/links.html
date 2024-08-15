@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+Pseudoclasses</title>
+
+<style>
+body{
+    color: rgb(232, 176, 7);
+    font: normal 1.2em sans-serif;
+    background-color: rgb(28, 28, 28);
+}
+
+a{
+    color: rgb(232, 176, 7);
+    text-decoration: none;
+}
+a:visited{
+    color: rgb(255, 225, 135);
+}
+a:hover{
+    color: rgb(255, 136, 0);
+}
+a:active{
+    color: rgb(248, 66, 0);
+}
+
+.special::after{
+    content: '«';
+}
+.special::before{
+    content: '»';
+}
+.special:hover{
+    color: deeppink;
+}
+
+    
+</style>
+
+</head>
+<body>
+    <h1>Links</h1>
+    <main>
+        <ul>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://github.com/MeJohnGabriel?tab=overview&from=2023-12-01&to=2023-12-31"target="_blank" class="special">Github</a></li>
+            <li><a href="https://www.facebook.com/?locale=pt_BR"target="_blank">Facebook</a></li>
+            <li><a href="https://www.youtube.com"target="_blank">Youtube</a></li>
+        </ul>
+    </main>
+</body>
+</html>

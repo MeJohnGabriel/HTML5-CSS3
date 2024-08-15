@@ -1,0 +1,62 @@
+@font-face {
+    font-family:'Krinkes' ;
+    src: url('fonts/KrinkesDecorPERSONAL.ttf') 
+    format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+     
+    background-image: linear-gradient(to right, #ffffff  , #FD9913);
+    padding-left: 12px;
+}
+
+img{
+    width: 90px;
+    height: 90px;
+    margin-top: 12px;
+    rotate: -12deg;
+    padding-right:100px;
+}
+h1{
+    font-family: 'Krinkes'; 
+    color: #FD9913;
+    font-size: 5em;  
+    margin-left: 50px;
+    margin-top: 0;  
+}
+
+h2{
+    font-family:'Krinkes';
+    color:#b76b08 ;
+    font-size: 4em;
+    text-align: center;
+    font-weight: bolder;
+}
+
+h3{
+    font-family: 'Krinkes'; 
+    color: rgb(217, 143, 7);
+    font-size: 3em;
+    padding-left: 9px;
+    padding-top: 14px;
+
+}
+
+p{
+    font-family:sans-serif;
+    color:rgb(0, 0, 0);
+    font-size: 1.5em;
+    text-align:justify;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 120px;
+}
+section{
+    background-color: #ffffff ;
+    border-radius: 12px;
+    box-shadow: 9px 9px 100px #855f00ce;
+    width: 550px;
+    margin: auto;
+}

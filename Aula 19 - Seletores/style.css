@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family:'America';
+    src: url('fonts/American\ Captain.ttf') 
+    format('truetype');
+    font-weight: 300;
+    font-size: 3em;
+}
+
+body{
+    font-family: sans-serif;
+    background-color: #F4FFFD;
+}
+mark{
+    background-color: #00ca3d;
+}
+h1#main{
+    text-align:center;
+    background-color: #011936;
+    margin: 0;
+    color: rgba(234, 234, 234, 0.954);
+    
+}
+
+.basico{
+    font-family:'America' , 'sans-serif';
+    color: #7bc700;
+}
+.int{
+    font-family:'America' , 'sans-serif';
+    color: #fcbe03;
+}
+.Avançado{
+    font-family:'America' , 'sans-serif';
+    color: #ED254E;
+}
+
+h1{
+    font-family:'America' , 'sans-serif';
+    color: #ED254E;
+}
+
+.about{
+    font-family: 'America';
+
+}
+
