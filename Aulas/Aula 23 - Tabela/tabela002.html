@@ -16,6 +16,7 @@
             height: 400px;
             border-collapse: collapse;
             margin: auto;
+            position: relative;
 
         }
 
@@ -24,16 +25,38 @@
             color: white;
         }
 
+        thead>tr>th
+
+        /*Ou so chama o "thead"*/
+            {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(161, 161, 161);
+        }
+
+        /* tbody>tr:nth-child(2n) {
+            background-color: rgb(71, 71, 71);
+            color: white;
+        } */
+
+        tbody>tr:nth-child(even) {
+            /*PAR (2n)*/
+            background-color: rgb(71, 71, 71);
+            color: white;
+        }
+
+        tbody>tr:nth-child(odd) {
+            /*IMPAR(2n)*/
+            background-color: rgb(255, 255, 255);
+        }
+
+
         td,
         th {
             border: 1px solid black;
             padding: 10px;
             height: 30px;
             vertical-align: middle;
-        }
-
-        tr.color {
-            background-color: bisque;
         }
 
         tfoot {
@@ -49,6 +72,7 @@
     <!--Anatomia de tabelas maiores:
     TABLE
         THEAD
+        CAPTION 
             TR , TD , TH
         TBODY 
             TR , TD , TH
@@ -56,10 +80,11 @@
             TR , TD , TH
 -->
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
-            <th>Estado</th>
-            <th>População</th>
-            <th>% da pop. total</th>
+            <th scope="col">Estado</th>
+            <th scope="col">População</th>
+            <th scope="col" style="width:80px;">% da pop. total</th>
         </thead>
         <tbody>
             <tr class="color">
@@ -97,6 +122,56 @@
                 <td>9 539 029</td>
                 <td>4,46%</td>
             </tr>
+            <tr>
+                <td>Roraima</td>
+                <td>129 915</td>
+                <td>6,30%</td>
+            </tr>
+            <tr>
+                <td>Sergipe</td>
+                <td>123 321</td>
+                <td>2,12%</td>
+            </tr>
+            <tr>
+                <td>Goias</td>
+                <td>423 321 112</td>
+                <td>53,12%</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td>233 321</td>
+                <td>13,12%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td>423 321</td>
+                <td>11,12%</td>
+            </tr>
+            <tr>
+                <td>Rondonia</td>
+                <td>223 321</td>
+                <td>42,12%</td>
+            </tr>
+            <tr>
+                <td>Ceara</td>
+                <td>323 321</td>
+                <td>22,12%</td>
+            </tr>
+            <tr>
+                <td>Porto Alegre</td>
+                <td>222 321</td>
+                <td>42,11%</td>
+            </tr>
+            <tr>
+                <td>Floripa</td>
+                <td>723 321</td>
+                <td>34,12%</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>123 321</td>
+                <td>2,12%</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
@@ -106,6 +181,60 @@
             </tr>
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit optio unde quidem accusamus sapiente, ab deserunt
+        veritatis, corrupti praesentium quia, vero expedita eveni
+        et id rerum. Deserunt perferendis consequuntur itaque
+        explicabo?
+        Lorem ipsum dolor sit amet consectetur adipisicing eli
+        t. Cumque voluptatem cum doloribus dolore minima! Veniam,
+        autem asperiores aspernatur, veritatis maiores libero quibusdam, in optio perferendis sed facere? Eligendi,
+        consectetur vitae? Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Excepturi, labore? Eveniet rerum
+        nobis fugiat magnam ipsa reprehenderit perferendis deleniti optio unde consequuntur deserunt q
+        uis sint vel
+        consequatur totam, exercitationem similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+        dignissimos nulla quas vitae consectetur! Veniam minima harum blanditiis officia eligendi possimus culpa, quam
+        consectetur quisquam optio, nobis accusantium non quaerat
+        . Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Natus voluptatibus voluptas error assumenda, quae architecto delectus, repudiandae qui fugiat pariatur
+        quos repellat adipisci. Placeat, ipsa quis eligendi quo saepe unde.
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit optio unde quidem accusamus sapiente, ab deserunt
+        veritatis, corrupti praesentium quia, vero expedita eveni
+        et id rerum. Deserunt perferendis consequuntur itaque
+        explicabo?
+        Lorem ipsum dolor sit amet consectetur adipisicing eli
+        t. Cumque voluptatem cum doloribus dolore minima! Veniam,
+        autem asperiores aspernatur, veritatis maiores libero quibusdam, in optio perferendis sed facere? Eligendi,
+        consectetur vitae? Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Excepturi, labore? Eveniet rerum
+        nobis fugiat magnam ipsa reprehenderit perferendis deleniti optio unde consequuntur deserunt q
+        uis sint vel
+        consequatur totam, exercitationem similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+        dignissimos nulla quas vitae consectetur! Veniam minima harum blanditiis officia eligendi possimus culpa, quam
+        consectetur quisquam optio, nobis accusantium non quaerat
+        . Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Natus voluptatibus voluptas error assumenda, quae architecto delectus, repudiandae qui fugiat pariatur
+        quos repellat adipisci. Placeat, ipsa quis eligendi quo saepe unde.
+    </p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odit optio unde quidem accusamus sapiente, ab deserunt
+        veritatis, corrupti praesentium quia, vero expedita eveni
+        et id rerum. Deserunt perferendis consequuntur itaque
+        explicabo?
+        Lorem ipsum dolor sit amet consectetur adipisicing eli
+        t. Cumque voluptatem cum doloribus dolore minima! Veniam,
+        autem asperiores aspernatur, veritatis maiores libero quibusdam, in optio perferendis sed facere? Eligendi,
+        consectetur vitae? Lorem ipsum dolor, sit amet consectetur
+        adipisicing elit. Excepturi, labore? Eveniet rerum
+        nobis fugiat magnam ipsa reprehenderit perferendis deleniti optio unde consequuntur deserunt q
+        uis sint vel
+        consequatur totam, exercitationem similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque
+        dignissimos nulla quas vitae consectetur! Veniam minima harum blanditiis officia eligendi possimus culpa, quam
+        consectetur quisquam optio, nobis accusantium non quaerat
+        . Lorem, ipsum dolor sit amet consectetur adipisicing
+        elit. Natus voluptatibus voluptas error assumenda, quae architecto delectus, repudiandae qui fugiat pariatur
+        quos repellat adipisci. Placeat, ipsa quis eligendi quo saepe unde.
+    </p>
 
 
 
