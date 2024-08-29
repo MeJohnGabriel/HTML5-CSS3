@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            padding: 10px;
+            width: 600px;
+            height: 400px;
+            border-collapse: collapse;
+            margin: auto;
+
+        }
+
+        thead {
+            background-color: rgb(161, 161, 161);
+            color: white;
+        }
+
+        td,
+        th {
+            border: 1px solid black;
+            padding: 10px;
+            height: 30px;
+            vertical-align: middle;
+        }
+
+        tr.color {
+            background-color: bisque;
+        }
+
+        tfoot {
+            background-color: rgb(94, 94, 94);
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1 style="text-align: center; margin-bottom: 50px 50px;">População brasileira por estado</h1>
+    <!--Anatomia de tabelas maiores:
+    TABLE
+        THEAD
+            TR , TD , TH
+        TBODY 
+            TR , TD , TH
+        TFOOT
+            TR , TD , TH
+-->
+    <table>
+        <thead>
+            <th>Estado</th>
+            <th>População</th>
+            <th>% da pop. total</th>
+        </thead>
+        <tbody>
+            <tr class="color">
+                <td>São Paulo</td>
+                <td>45 973 190 </td>
+                <td>21,88%</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 322 692</td>
+                <td>10,11%</td>
+            </tr>
+            <tr class="color">
+                <td>Rio de Janeiro</td>
+                <td>17 219 679</td>
+                <td>7,91%</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td>14 850 513 </td>
+                <td>6,96%</td>
+            </tr>
+            <tr class="color">
+                <td>Paraná</td>
+                <td>11 824 665</td>
+                <td>5,64%</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td>11 229 915</td>
+                <td>5,36%</td>
+            </tr>
+            <tr class="color">
+                <td>Pernambuco</td>
+                <td>9 539 029</td>
+                <td>4,46%</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de habitantes</th>
+                <td> 437 029 112</td>
+                <td> 12,09%</td>
+            </tr>
+        </tfoot>
+    </table>
+
+
+
+</body>
+
+</html>
