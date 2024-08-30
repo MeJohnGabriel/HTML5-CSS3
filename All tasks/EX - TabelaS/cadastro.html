@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personalização de Colunas com colgroup</title>
+    <style>
+        body {
+            font-family: Arial;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 50px;
+        }
+
+        th,
+        td {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+
+        .amarelo {
+            background-color: yellow;
+        }
+
+        .vermelho {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <table>
+        <colgroup>
+            <col class="vermelho" span="">
+            <col class="amarelo" span="2">
+            <col class="vermelho">
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+        <tr>
+            <td>Nathalia Almeida</td>
+            <td>F</td>
+            <td>23</td>
+            <td>Jornalista</td>
+        </tr>
+        <tr>
+            <td>Joao Pedro</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Policial</td>
+        </tr>
+        <tr>
+            <td>Marcelo Araujo</td>
+            <td>M</td>
+            <td>33</td>
+            <td>Bombeiro</td>
+        </tr>
+        <tr>
+            <td>Luiza Costa</td>
+            <td>F</td>
+            <td>21</td>
+            <td>Professora</td>
+        </tr>
+        <tr>
+            <td>Paulo Silva</td>
+            <td>M</td>
+            <td>26</td>
+            <td>Encanador</td>
+        </tr>
+        <tr>
+            <td>Tiago Silva</td>
+            <td>M</td>
+            <td>29</td>
+            <td>Programador</td>
+        </tr>
+    </table>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
