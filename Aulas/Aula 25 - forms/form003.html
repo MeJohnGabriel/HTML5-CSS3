@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form003</title>
+<style>
+    *{
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+text-align: center;
+}  
+</style>
+</head>
+  <body>
+    <form action="form.js" method="get" autocomplete="on">
+      <p><label for="istudent">Student:</label></p>
+      <input type="text" name="student" id="istudent" required placeholder="Full Name"/>
+      <p>
+    <p><label for="igrade">Grade:</label></p>
+    <input type="number" name="grade" id="igrade" min="0" maxlength="10" placeholder="0 to 10pts" step="0.1" required>
+</p>
+<p><label for="iperiod"</label>Period</p>
+<input type="month" name="peridod" id="iperiod" value="2025-01">
+        <p><label for="idate">Date:</label></p>
+        <p><input type="date" name="date" id="idate" required></p>
+        <p>
+            <input type="submit" value="Send" />
+            <input type="reset" value="Reset" />
+        </p>
+    <p><label for="time">Time:</label></p>
+    <p><input type="time" name="time" id="itime" value="10:00"></p>
+    </form>
+  </body>
+</html>
+ 

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form2</title>
+    <style>
+      body{
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+          background-color: rgb(255, 255, 255);
+      }
+      form{
+        background-color: rgb(0, 132, 255);
+        text-align: center;
+        padding: 50px;
+        border-radius: 12px;
+        box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.356);
+        color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="form.js" method="post">
+      <p>
+        <p><label for="iuser">Login:</label></p>
+        <input type="text" id="iuser" required placeholder="Username" autocomplete="username"/>
+      </p>
+      <p>
+        <p><label for="ipassword">Password:</label></p>
+        <input type="password" name="pass" id="ipassword" required placeholder="minimum 7 letters"/>
+        <p>
+            <input type="submit" value="Send" />
+            <input type="reset" value="Reset" />
+        </p>
+      </p>
+    </form>
+  </body>
+</html>

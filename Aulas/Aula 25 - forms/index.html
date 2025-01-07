@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms introdução</title>
+    <style>
+      form {
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        color: rgb(0, 0, 0);
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 style="text-align: center">FORM#1</h1>
+    <form action="form.js" method="get">
+      <p>
+        <label for="inome">Nome: <br /></label>
+        <input type="text" name="nome" id="inome" />
+      </p>
+      <p>
+        <label for="isobreNome">Sobre nome: <br /></label>
+        <input type="text" name="sobrenome" id="isobreNome" />
+      </p>
+      <p><input type="submit" value="Enviar" /></p>
+    </form>
+  </body>
+</html>
