@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form004</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      body {
+        background-color: rgb(255, 255, 255);
+        color: rgb(0, 0, 0);
+        text-align: justify;
+      }
+      form > input {
+        text-align: left;
+      }
+    </style>
+  </head>
+  <body>
+    <form action="form.js" autocomplete="on" method="get">
+      <fieldset>
+        <legend>Personal Data</legend>
+        <p>
+          <label for="inome">Name:</label>
+          <input
+            type="text"
+            name="name"
+            id="iName"
+            required
+            maxlength="20"
+            placeholder=""
+          />
+        </p>
+        <p>
+          <label for="iemail">E-mail:</label>
+          <input
+            type="email"
+            required
+            id="iemail"
+            placeholder="example@hotmail.com"
+          />
+        </p>
+        <p>
+          <label for="itel">Tel. Nº:</label>
+          <input
+            type="tel"
+            name="tel"
+            id="itel"
+            autocomplete="tel"
+            required
+            placeholder="(XX)XXXXX-XXXX"
+            pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+          />
+        </p>
+      </fieldset>
+      <p>
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+      </p>
+    </form>
+  </body>
+</html>

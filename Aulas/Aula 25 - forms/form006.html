@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form006</title>
+  </head>
+  <body>
+    <form action="form.js" method="post">
+      <p>
+        <label for="icor">Color</label>
+        <input type="color" id="icor" value="#000ff0" />
+      </p>
+      <p>
+        <label for="isatisfaction">Satisfaction level:</label>
+        <input
+          type="range"
+          name="range"
+          id="irange"
+          min="1"
+          max="5"
+          value="4"
+        />
+      </p>
+
+      <fieldset>
+        <legend>Profile picture:</legend>
+        <p><input type="file" name="photo" id="iphoto" /></p>
+      </fieldset>
+
+      <p>
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+      </p>
+    </form>
+  </body>
+</html>
