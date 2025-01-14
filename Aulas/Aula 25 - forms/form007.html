@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form007</title>
+  </head>
+  <body>
+    <form action="form.js" method="post">
+      <p>
+        <label for="istate">State:</label>
+        <select name="state" id="istate">
+          <option value="default" selected>--- Choose ---</option>
+          <optgroup label="Sudeste">
+            <option value="sp">São Paulo</option>
+            <option value="rj">Rio de Janeiro</option>
+            <option value="mg">Minas Gerais</option>
+          </optgroup>
+
+          <optgroup label="Nordeste">
+            <option value="ba">Bahia</option>
+            <option value="pe">Pernanbuco</option>
+            <option value="rn">Rio Grande do Norte</option>
+          </optgroup>
+        </select>
+      </p>
+      <p>
+        <label for="iprof">Profession</label>
+        <input
+          type="text"
+          placeholder="Area/Profession"
+          name="prof"
+          id="iprof"
+          list="listProf"
+        />
+        <datalist id="listProf">
+          <option value="Public Security">Firefighter</option>
+          <option value="Public Security">Pollice Officer</option>
+          <option value="Countability">Bankist</option>
+          <option value="Attorney">Lawyer</option>
+          <option value="Education">Teacher</option>
+          <option value="Health">Doctor</option>
+          <option value="Structure">Engineer</option>
+          <option value="Health">Nurse</option>
+        </datalist>
+      </p>
+      <p>
+        <label for="imsg">Mensagem</label><br />
+        <textarea
+          placeholder="Your message..."
+          name="msg"
+          id="imsg"
+          cols="30"
+          rows="10"
+        ></textarea>
+      </p>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form008</title>
+    <style>
+      form {
+        font-family: "Courier New", Courier, monospace;
+        text-align: center;
+      }
+      div.bttns > input {
+        font-family: "Courier New", Courier, monospace;
+      }
+      div.bttns > input#sumBtn {
+        background-color: rgb(77, 227, 77);
+        border-radius: 12px;
+        padding: 5px 20px 5px 20px;
+      }
+      div.bttns > input#resetBtn {
+        background-color: rgb(255, 223, 60);
+        border-radius: 12px;
+        padding: 5px 15px 5px 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <fieldset>
+      <form action="form.js">
+        <p>
+          <label for="in1">Number 1:</label>
+          <input
+            type="number"
+            name="number"
+            id="in1"
+            min="0"
+            max="50"
+            required
+          />
+        </p>
+        <p>
+          <label for="in2">Number 2:</label>
+          <input
+            type="number"
+            name="number"
+            id="in2"
+            min="0"
+            max="50"
+            required
+          />
+        </p>
+        <p>
+          <fieldset>
+          <legend>TOTAL:</legend>
+          <output id="res"></output></fieldset>
+          
+        </p>
+        <div class="bttns">
+          <input type="button" value="Sum" id="sumBtn" onclick="sum()" />
+          <input type="reset" value="Clear" id="resetBtn" onclick="test()" />
+        </div>
+      </form>
+    </fieldset>
+  </body>
+  <script src="form.js"></script>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form008</title>
+  </head>
+  <body>
+    <form action="form02.js">
+      <p>
+        <label for="in1">Number 1:</label>
+        <input
+          type="number"
+          name="number1"
+          id="in1"
+          oninput="iSum.innerHTML = Number(in1.value) + Number(in2.value)"
+        />
+      </p>
+      <p>
+        <label for="in1">Number 2:</label>
+        <input
+          type="number"
+          name="number2"
+          id="in2"
+          oninput="iSum.innerHTML =
+        Number(in1.value) + Number(in2.value)"
+        />
+      </p>
+
+      <p>
+        <label for="">Sum:</label>
+        <output name="sum" id="iSum">0</output>
+      </p>
+      <p>
+        <input type="submit" value="Sum" />
+        <input type="reset" value="Reset" />
+      </p>
+    </form>
+  </body>
+  <script src="form02.js"></script>
+</html>

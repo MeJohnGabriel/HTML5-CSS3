@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form010</title>
+  </head>
+  <body>
+    <form action="form.js">
+      <p>
+        <label for="iYear">Year:</label>
+        <input
+          type="number"
+          name="year"
+          id="iYear"
+          min="1930"
+          max="2025"
+          oninput="calcAge()"
+        />
+      </p>
+      <p>
+        <label for="iAge">Age:</label>
+        <output id="iAge">0</output>
+      </p>
+      <p>
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+      </p>
+    </form>
+  </body>
+  <script>
+    const calcAge = function () {
+      let year = new Date().getFullYear();
+      iAge.innerHTML = Number(year) - Number(iYear.value);
+    };
+  </script>
+</html>

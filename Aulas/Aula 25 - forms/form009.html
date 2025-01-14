@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="form.js">
+      <p>
+        <label for="iNum">Number:</label>
+        <input
+          type="range"
+          name=""
+          id="iNum"
+          min="0"
+          max="10"
+          step="1"
+          value="5"
+          oninput="iVal.innerHTML = Number(iNum.value)"
+        />
+        <output id="iVal">5</output>
+      </p>
+      <p>
+        <input type="submit" value="Send" />
+        <input type="reset" value="Reset" />
+      </p>
+    </form>
+  </body>
+</html>
