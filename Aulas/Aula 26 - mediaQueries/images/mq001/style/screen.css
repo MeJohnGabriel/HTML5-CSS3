@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+/* Css for screens */
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 1em;
+}
+
+header > h1 {
+  background-color: gray;
+  text-align: center;
+  padding: 5px;
+}
+
+menu {
+  background-color: darkgray;
+}
+
+menu > ul > li {
+  background-color: rgb(47, 47, 47);
+  padding: 10px;
+  display: inline-block;
+  color: white;
+}
+
+article {
+  margin: auto;
+  margin-top: 10px;
+  width: 75%;
+  display: block;
+}
