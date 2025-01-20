@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+/* GENERAL SETTINGS */
+@media all {
+  * {
+    margin: 0;
+    padding: 0;
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+      "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+
+    html,
+    body {
+      width: 100vw;
+      height: 100vh;
+      background-color: rgb(8, 183, 241);
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+
+    h1 {
+      color: white;
+      text-shadow: 1px 1px 1px black;
+      padding: 10px;
+    }
+  }
+}
+
+/* LANDSCAPE SETTINGS */
+@media screen and (orientation: portrait) {
+  body {
+    background-color: lightcoral;
+    background-image: url(../images/cev-portrait.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+/* PORTRAIT SETTINGS */
+@media screen and (orientation: landscape) {
+  body {
+    background-color: lightsalmon;
+    background-image: url(../images/cev-landscape.jpg);
+    background-size: cover;
+    background-position: center;
+  }
+}
