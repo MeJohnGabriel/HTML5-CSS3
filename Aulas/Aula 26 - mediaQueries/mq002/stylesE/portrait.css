@@ -1,3 +1,11 @@
 @charset 'UTF-8';
 
 /* DEVICE ON PORTRAIT */
+
+body {
+  background-color: lightcoral;
+  background-image: url(../images/cev-portrait.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}

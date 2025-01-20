@@ -1,3 +1,10 @@
 @charset 'UTF-8';
 
 /* DEVICE ON LANDSCAPE */
+
+body {
+  background-color: lightsalmon;
+  background-image: url(../images/cev-landscape.jpg);
+  background-size: cover;
+  background-position: center;
+}
