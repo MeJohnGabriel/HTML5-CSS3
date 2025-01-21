@@ -1,0 +1,26 @@
+@charset 'UTF-8';
+
+/* Typical device breakpoints
+--------------------------------
+Extra small devices: max 600px
+Cellphone: 600px-768px
+Tablet: 768px-992px
+Desktop: 992px-1200px
+Tv: above 1200px
+*/
+
+/* Se quiser que o menu hamburguer apareca no tablet coloque o 'and (max-width: 992px)'  */
+@media screen and (min-width: 768px) {
+  span#burguer {
+    display: none;
+  }
+  menu {
+    display: block;
+  }
+  menu#itens > ul > li {
+    display: inline-block;
+  }
+  main {
+    width: 768px;
+  }
+}
