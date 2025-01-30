@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox010</title>
+    <style>
+      div.container {
+        display: flex;
+        background-color: #ffa07a;
+        flex-flow: row nowrap;
+      }
+      div.item {
+        background-color: lightskyblue;
+        border: 1px solid black;
+        text-align: center;
+        align-content: center;
+        padding: 10px;
+      }
+
+      div#cxA {
+        background-color: rgb(255, 221, 0);
+        /* 
+        flex-shrink: 0;
+        flex-grow: 1;
+        flex-basis: 200px;
+        SHORTHAND ⬇️*/
+        flex: 1 0 200px;
+      }
+      div#cxB {
+        background-color: rgb(130, 215, 130);
+        /* 
+            --- flex: 0 1 auto;---
+            ---mesma coisa⬇️  ---                 */
+        flex: initial;
+      }
+      div#cxC {
+        /* 
+           --- flex: 0 0 auto */
+        flex: none;
+      }
+      div#cxD {
+        /* 
+            --- flex: 1 1 auto; ---
+        */
+        flex: auto;
+      }
+      div#cxE {
+        /* 
+        --- flex: 3 1 auto; ---
+         */
+        flex: 3;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="cxA" class="item">A</div>
+      <div id="cxB" class="item">B</div>
+      <div id="cxC" class="item">C</div>
+      <div id="cxD" class="item">D</div>
+      <div id="cxE" class="item">E</div>
+    </div>
+  </body>
+</html>

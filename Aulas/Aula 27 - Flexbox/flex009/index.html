@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox009</title>
+    <style>
+      div.container {
+        display: flex;
+        background-color: lightsalmon;
+        /* se estiver com wrap ele permanece com 150px, mas quebra
+           se estiver com nowrap ele NAO permanece com 150px, mas nao quebra
+        */
+        flex-flow: row wrap;
+      }
+      div.item {
+        background-color: lightskyblue;
+        border: 1px solid black;
+        text-align: center;
+        padding: 10px;
+        flex-basis: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="item">A</div>
+      <div class="item">Outro conteudo</div>
+      <div class="item">C</div>
+      <div class="item">D</div>
+      <div class="item">E</div>
+      <div class="item">Conteudo maior ainda, que vai ocupar mais espa;o</div>
+      <div class="item">G</div>
+    </div>
+  </body>
+</html>
